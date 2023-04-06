@@ -1,0 +1,24 @@
+.nav-bar {
+  display: flex;
+  align-items: center;
+
+  height: 40px;
+  background-color: rgb(247, 214, 219);
+  border-bottom: 1px solid rgb(236, 183, 191);
+}
+
+.nav-bar .links-wrapper {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar a {
+  color: rebeccapurple;
+  text-decoration: none;
+}
+
+.nav-bar .active {
+  color: salmon;
+}
