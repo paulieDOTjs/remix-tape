@@ -1,10 +1,9 @@
-export type mixesProps = {} & Omit<
-  JSX.IntrinsicElements["div"],
-  "ref" | "children"
->;
+import { Outlet } from "@remix-run/react";
 
-const mixes: (props: mixesProps) => JSX.Element = ({ className, ...rest }) => {
-  return <div {...rest}></div>;
-};
+const Mixes = () => (
+  <div className="mixes-page">
+    <Outlet />
+  </div>
+);
 
-export default mixes;
+export default Mixes;

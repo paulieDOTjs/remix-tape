@@ -12,6 +12,7 @@ import {
 } from "@remix-run/react";
 import { NavBar, links as navBarLinks } from "~/components/NavBar/NavBar";
 import type { LinksFunction } from "@remix-run/node";
+import { handleLinksSurfacing } from "~/utils/handleLinksSurfacing";
 
 interface DocumentProps {
   children: React.ReactNode;
@@ -65,4 +66,4 @@ export const Document = withEmotionCache(
   }
 );
 
-export const links: LinksFunction = () => [...navBarLinks()];
+export const links: LinksFunction = () => handleLinksSurfacing(navBarLinks);

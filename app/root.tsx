@@ -4,7 +4,8 @@ import Layout from "./mui/Layout";
 import { Document, links as documentLinks } from "./mui/Document";
 import type { LinksFunction } from "@remix-run/node";
 import resetCss from "./styles/reset.css";
-import indexCss from "./styles/index.css";
+import rootCss from "./styles/root.css";
+import { handleLinksSurfacing } from "./utils/handleLinksSurfacing";
 
 export default function App() {
   return (
@@ -52,8 +53,9 @@ export const meta: V2_MetaFunction = () => {
   return [{ title: "Remixtape" }];
 };
 
-export const links: LinksFunction = () => [
-  ...documentLinks(),
-  { rel: "stylesheet", href: resetCss },
-  { rel: "stylesheet", href: indexCss },
-];
+export const links: LinksFunction = () =>
+  handleLinksSurfacing(
+    documentLinks,
+    { rel: "stylesheet", href: resetCss },
+    { rel: "stylesheet", href: rootCss }
+  );

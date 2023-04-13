@@ -2,6 +2,7 @@ import { NavLink } from "@remix-run/react";
 import styles from "./nav-bar.css";
 import type { LinksFunction } from "@remix-run/node";
 import { Container, Link } from "@mui/material";
+import { handleLinksSurfacing } from "~/utils/handleLinksSurfacing";
 
 export type NavBarProps = Omit<
   JSX.IntrinsicElements["div"],
@@ -28,4 +29,5 @@ export const NavBar: (props: NavBarProps) => JSX.Element = ({
   );
 };
 
-export const links: LinksFunction = () => [{ rel: "stylesheet", href: styles }];
+export const links: LinksFunction = () =>
+  handleLinksSurfacing({ rel: "stylesheet", href: styles });

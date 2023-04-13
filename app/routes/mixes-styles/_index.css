@@ -1,0 +1,15 @@
+.mixes-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mixes-page .input-wrapper {
+  display: flex;
+  gap: 16px;
+}
+
+.mixes-page .button-wrapper {
+  display: flex;
+  gap: 8px;
+}

@@ -1569,6 +1569,13 @@
   resolved "https://registry.yarnpkg.com/@mui/core-downloads-tracker/-/core-downloads-tracker-5.11.16.tgz#20d4dbeb011d0d76417fdda777d8ef2c842dc543"
   integrity sha512-GxRfZ/HquQ/1nUc9qQVGReP6oOMS8/3QjPJ+23a7TMrxl2wjlmXrMNn7tRa30vZcGcDgEG+J0aseefUN0AoawQ==
 
+"@mui/icons-material@^5.11.16":
+  version "5.11.16"
+  resolved "https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.11.16.tgz#417fa773c56672e39d6ccfed9ac55591985f0d38"
+  integrity sha512-oKkx9z9Kwg40NtcIajF9uOXhxiyTZrrm9nmIJ4UjkU2IdHpd4QVLbCc/5hZN/y0C6qzi2Zlxyr9TGddQx2vx2A==
+  dependencies:
+    "@babel/runtime" "^7.21.0"
+
 "@mui/material@^5.11.16":
   version "5.11.16"
   resolved "https://registry.yarnpkg.com/@mui/material/-/material-5.11.16.tgz#958cb7bcfa71d889c2585516f012ab3363af843c"
@@ -1703,6 +1710,18 @@
   version "2.11.7"
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.7.tgz#ccab5c8f7dc557a52ca3288c10075c9ccd37fff7"
   integrity sha512-Cr4OjIkipTtcXKjAsm8agyleBuDHvxzeBoa1v543lbv1YaIwQjESsVcmjiWiPEbC1FIeHOG/Op9kdCmAmiS3Kw==
+
+"@prisma/client@^4.12.0":
+  version "4.12.0"
+  resolved "https://registry.yarnpkg.com/@prisma/client/-/client-4.12.0.tgz#119b692888b1fe0fd3305c7d0e0ac48520aa6839"
+  integrity sha512-j9/ighfWwux97J2dS15nqhl60tYoH8V0IuSsgZDb6bCFcQD3fXbXmxjYC8GHhIgOk3lB7Pq+8CwElz2MiDpsSg==
+  dependencies:
+    "@prisma/engines-version" "4.12.0-67.659ef412370fa3b41cd7bf6e94587c1dfb7f67e7"
+
+"@prisma/engines-version@4.12.0-67.659ef412370fa3b41cd7bf6e94587c1dfb7f67e7":
+  version "4.12.0-67.659ef412370fa3b41cd7bf6e94587c1dfb7f67e7"
+  resolved "https://registry.yarnpkg.com/@prisma/engines-version/-/engines-version-4.12.0-67.659ef412370fa3b41cd7bf6e94587c1dfb7f67e7.tgz#51a1cc5c886564b542acde64a873645d0dee2566"
+  integrity sha512-JIHNj5jlXb9mcaJwakM0vpgRYJIAurxTUqM0iX0tfEQA5XLZ9ONkIckkhuAKdAzocZ+80GYg7QSsfpjg7OxbOA==
 
 "@prisma/engines@4.12.0":
   version "4.12.0"
